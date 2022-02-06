@@ -1,0 +1,222 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;600;700&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;700&display=swap");
+
+/* Global Changing  */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* Hero And Navigation Together */
+
+.hero-navigation {
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: top -50px right -50px;
+}
+
+/* Navigation Bar Design CSS starts Here */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0 100px;
+}
+nav a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+nav button,
+hero button,
+.bottom-button,
+.newsletter-section button {
+  color: white;
+  padding: 10px 20px;
+  background-color: rgb(243, 97, 60);
+  border: none;
+  border-radius: 20px;
+}
+
+/* Navigation Bar Design Ends Here */
+
+/* Hero Area Design Starts Here */
+
+hero {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  text-align: left;
+}
+hero button {
+  margin-top: 15px;
+}
+.hero-left h1 {
+  font-size: 40px;
+  color: rgb(42, 50, 86);
+}
+.hero-left h1,
+.hero-left p {
+  margin-right: 250px;
+  margin-top: 20px;
+}
+hero p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Hero Area Design Ends Here */
+
+/* Introduction Section Design Starts Here */
+.intro-section {
+  display: flex;
+  height: 80vh;
+  padding: 0px 100px;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -200px left -150px;
+  background-size: 500px;
+}
+.intro-main h2 {
+  color: rgb(42, 50, 86);
+}
+.secondery-main {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: baseline;
+}
+.secondery-main h3 {
+  margin-bottom: 10px;
+  color: rgb(42, 50, 86);
+}
+.secondery-main p {
+  color: gray;
+}
+.secondery-main h4 {
+  margin-right: 15px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: rgb(243, 97, 60);
+  color: white;
+}
+.secondery-main h4:first-child {
+  padding: 2px 12px;
+}
+
+/* Reviews Section Design CSS Starts Here*/
+.review-section {
+  text-align: center;
+}
+
+.review-section h2 {
+  color: rgb(42, 50, 86);
+  margin-bottom: 50px;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 80px;
+}
+.review p {
+  margin-top: 10px;
+}
+.review img {
+  margin-bottom: 10px;
+}
+.review {
+  margin: 0 10px;
+  padding: 20px;
+  /* border: 1px solid black; */
+  background-color: rgb(250, 250, 250);
+  border-radius: 20px;
+}
+
+/* Reviews Section Design CSS Ends Here */
+
+/* Get Started Button On Bottom Style Starts Here */
+
+.bottom-button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px rgba(243, 97, 60, 0.795);
+}
+
+/* Get Started Button On Bottom Style Ends Here */
+
+/* NewsLetter Section Starts Here */
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(243, 97, 60);
+  height: 200px;
+  align-items: center;
+  background-image: url(./images/bg-simplify-section-mobile.svg);
+  background-position: left;
+}
+.newsletter-section button {
+  background-color: white;
+  color: rgb(243, 97, 60);
+  font-weight: bold;
+}
+
+/* NewsLetter Section Ends Here */
+
+/* Footer Design CSS Starts Here */
+.footer {
+  background-color: black;
+  height: 30vh;
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+.footer-anchor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-anchor a {
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+.footer-anchor a:hover {
+  color: rgb(243, 97, 60);
+}
+.signup-section p {
+  color: gray;
+}
+::placeholder {
+  color: rgb(243, 97, 60);
+}
+input {
+  height: 35px;
+  width: 180px;
+  border-radius: 30px;
+  border: 1px solid rgb(243, 97, 60);
+}
+.signup-section button {
+  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 7px 20px;
+  background-color: rgb(243, 97, 60);
+  color: white;
+  border-radius: 30px;
+}
+svg {
+  margin-bottom: 20px;
+}
+.icon-logo img {
+  margin: 0 5px;
+}
+/* Footer Design CSS Ends Here */
